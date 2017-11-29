@@ -2,7 +2,7 @@ import gulp from 'gulp';
 
 gulp.task('copy:fonts', () => {
   return gulp.src('src/fonts/**/*{woff,woff2}')
-    pipe(gulp.dest('build/fonts'));
+    .pipe(gulp.dest('build/fonts'));
 });
 
 gulp.task('copy:html', () => {
