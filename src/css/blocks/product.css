@@ -1,13 +1,13 @@
 .product {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
   color: $gray;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 320px;
+  text-align: center;
 
   @media (min-width: 768px) {
     margin: 0 20px;
@@ -19,19 +19,19 @@
   }
 
   &__card {
-    padding-left: 45px;
+    position: relative;
+    flex-grow: 1;
+    min-height: 480px;
     padding-top: 20px;
     padding-right: 15px;
     padding-bottom: 15px;
-    position: relative;
-    text-align: left;
-    min-height: 480px;
+    padding-left: 45px;
     background-image: url("../img/cat@1x.png");
     background-repeat: no-repeat;
     background-position: left 4px bottom 4px;
     background-size: 263px 270px;
     border-bottom-left-radius: 24px;
-    flex-grow: 1;
+    text-align: left;
     cursor: pointer;
     user-select: none;
 
@@ -63,46 +63,46 @@
 
   &__text {
     display: inline-block;
-    vertical-align: middle;
+    margin: 0;
+    margin-bottom: 7px;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
     color: $gray;
-    margin: 0;
-    margin-bottom: 7px;
+    vertical-align: middle;
   }
 
   &__text-selected {
-    color: $pink--hover;
     display: none;
+    color: $pink--hover;
   }
 
   &__title {
-    font-size: 48px;
-    line-height: 1.1;
-    color: #000000;
-    font-weight: 700;
     margin: 0;
     margin-bottom: 0px;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #000000;
   }
 
   &__fill {
-    font-size: 24px;
-    line-height: 1.2;
-    color: #000000;
-    font-weight: 700;
     margin: 0;
     margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000;
   }
 
   &__bonus-list {
+    padding: 0;
+    padding-bottom: 280px;
+    margin: 0;
+    font-size: 14px;
     font-weight: 400;
     color: $gray;
-    font-size: 14px;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 280px;
   }
 
   &__weight {
@@ -110,16 +110,16 @@
     bottom: 15px;
     right: 15px;
     z-index: 1;
-    text-align: center;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
     font-weight: 400;
     font-size: 42px;
     line-height: 1;
-    width: 80px;
-    height: 80px;
     border-radius: 50%;
     background-color: $blue;
     color: #ffffff;
-    padding: 10px;
+    text-align: center;
   }
 
   &__units {
