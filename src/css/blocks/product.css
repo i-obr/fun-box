@@ -1,0 +1,135 @@
+.product {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $gray;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 320px;
+
+  @media (min-width: 768px) {
+    margin: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 3%;
+  }
+
+  &__card {
+    padding-left: 45px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: left;
+    min-height: 480px;
+    background-image: url("../img/cat@1x.png");
+    background-repeat: no-repeat;
+    background-position: left 4px bottom 4px;
+    background-size: 263px 270px;
+    border-bottom-left-radius: 24px;
+    flex-grow: 1;
+    cursor: pointer;
+    user-select: none;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/cat@2x.png");
+    }
+
+    &:hover {
+      .product__bg {
+        stroke: $blue--hover;
+      }
+
+      .product__weight {
+        background-color: $blue--hover;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    fill: $gray--light;
+    stroke: $blue;
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $gray;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+
+  &__text-selected {
+    color: $pink--hover;
+    display: none;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 1.1;
+    color: #000000;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 0px;
+  }
+
+  &__fill {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #000000;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__bonus-list {
+    font-weight: 400;
+    color: $gray;
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 280px;
+  }
+
+  &__weight {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+    text-align: center;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $blue;
+    color: #ffffff;
+    padding: 10px;
+  }
+
+  &__units {
+    display: block;
+    font-size: 21px;
+  }
+
+  &__buy {
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+}

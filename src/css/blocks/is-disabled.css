@@ -1,0 +1,33 @@
+.is-disabled {
+  pointer-events: none;
+
+  & .product__bg {
+    stroke: $gray--disabled-ligt;
+    fill: $gray--disabled-dark;
+  }
+
+  & .product__card {
+    cursor: default;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      bottom: 4px;
+      left: 4px;
+      background-color: $gray--disabled-dark;
+      opacity: 0.6;
+      border-radius: 10px;
+      border-top-left-radius: 83px;
+    }
+  }
+
+  & .product__buy {
+    color: $yellow;
+  }
+
+  & .product__weight {
+    background-color: $gray--disabled-ligt;
+  }
+}

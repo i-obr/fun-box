@@ -1,0 +1,11 @@
+.disable-hover {
+  &:hover {
+    .product__text-default {
+      display: block;
+    }
+
+    .product__text-selected {
+      display: none;
+    }
+  }
+}
