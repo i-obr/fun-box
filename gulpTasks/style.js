@@ -16,7 +16,7 @@ gulp.task('style', () => {
       flexbugs,
       autoprefixer,
       mqpacker({
-        sort: false
+        sort: true
       })
     ]))
     .pipe(gulp.dest('build/css'))
