@@ -35,7 +35,8 @@ function Product(el, data) {
     }
 
     if (!good.classList.contains('is-selected')) {
-      good.classList.add('is-selected', 'disable-hover');
+      good.classList.add('is-selected');
+      good.classList.add('disable-hover');
       buy.innerHTML = data.buy;
       good.addEventListener('mouseleave', disableHover);
     } else {

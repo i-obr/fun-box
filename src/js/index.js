@@ -1,7 +1,7 @@
 import Product from './product';
 import data from './data';
 
-const products = Array.from(document.querySelectorAll('.product'));
+const products = Array.prototype.slice.call(document.querySelectorAll('.product'));
 
 products.forEach((product, index) => {
   const card = new Product(product, data[index]);
