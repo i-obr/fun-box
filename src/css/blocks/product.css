@@ -33,7 +33,6 @@
     border-bottom-left-radius: 24px;
     text-align: left;
     cursor: pointer;
-    user-select: none;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/cat@2x.png");
