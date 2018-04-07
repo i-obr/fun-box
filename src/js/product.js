@@ -49,5 +49,4 @@ function Product(el, data) {
   this.disabledCard = disabledCard;
 }
 
-
 export default Product;
