@@ -7,7 +7,9 @@
     "deploy": "NODE_ENV=production gulp deploy",
     "build": "NODE_ENV=production gulp build",
     "start": "gulp dev",
-    "precommit": "gulp lint"
+    "lint:scripts": "eslint",
+    "lint": "npm-run-all -p lint:*",
+    "prepush": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -55,6 +57,7 @@
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-zip": "^4.1.0",
+    "husky": "^0.14.3",
     "postcss-flexbugs-fixes": "^3.2.0",
     "precss": "^3.1.2",
     "stream-combiner2": "^1.1.1",
