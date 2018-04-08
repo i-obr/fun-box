@@ -7,8 +7,9 @@
     "deploy": "NODE_ENV=production gulp deploy",
     "build": "NODE_ENV=production gulp build",
     "start": "gulp dev",
-    "lint:scripts": "eslint",
-    "lint": "npm-run-all -p lint:*",
+    "lint:scripts": "eslint .",
+    "lint:styles": "./node_modules/.bin/stylelint src/css/**/*.css",
+    "lint": "npm run lint:scripts && npm run lint:styles",
     "prepush": "npm run lint"
   },
   "repository": {
@@ -59,8 +60,12 @@
     "gulp-zip": "^4.1.0",
     "husky": "^0.14.3",
     "postcss-flexbugs-fixes": "^3.2.0",
+    "postcss-normalize": "^4.0.0",
     "precss": "^3.1.2",
+    "prettier-stylelint": "^0.4.2",
     "stream-combiner2": "^1.1.1",
+    "stylelint": "^9.2.0",
+    "stylelint-config-standard": "^18.2.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^2.0.0"
   },

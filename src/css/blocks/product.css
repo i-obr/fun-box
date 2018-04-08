@@ -78,11 +78,11 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 700;
-    color: #000000;
+    color: #000;
   }
 
   &__fill {
@@ -91,7 +91,7 @@
     font-size: 24px;
     line-height: 1.2;
     font-weight: 700;
-    color: #000000;
+    color: #000;
   }
 
   &__bonus-list {
@@ -117,7 +117,7 @@
     line-height: 1;
     border-radius: 50%;
     background-color: $blue;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
   }
 
@@ -129,6 +129,6 @@
   &__buy {
     font-size: 13px;
     line-height: 16px;
-    color: #ffffff;
+    color: #fff;
   }
 }

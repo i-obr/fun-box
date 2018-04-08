@@ -1,15 +1,15 @@
-$font-expo:              "Exo2.0-Thin", Arial, sans-serif;
-$font-main:              "Trebuchet MS", Arial, sans-serif;
+$font-expo: "Exo2.0-Thin", Arial, sans-serif;
+$font-main: "Trebuchet MS", Arial, sans-serif;
 
-$blue:                    #1698D9;
-$blue--hover:             #2EA8E6;
+$blue: #1698d9;
+$blue--hover: #2ea8e6;
 
-$gray:                    #666666;
-$gray--light:             #F2F2F2;
-$gray--disabled-ligt:     #B7B7B7;
-$gray--disabled-dark:     #E4E4E4;
+$gray: #666;
+$gray--light: #f2f2f2;
+$gray--disabled-ligt: #b7b7b7;
+$gray--disabled-dark: #e4e4e4;
 
-$yellow:                  #FFFF66;
+$yellow: #ff6;
 
-$pink:                    #D91667;
-$pink--hover:             #E62E7A;
+$pink: #d91667;
+$pink--hover: #e62e7a;
