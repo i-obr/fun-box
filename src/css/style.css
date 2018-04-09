@@ -1,10 +1,10 @@
 @import "base/normalize";
 @import "base/fonts";
-@import "utils/variables";
+@import "utils/root";
 @import "base/scaffolding";
-@import "blocks/content";
+@import "blocks/page";
+@import "blocks/form";
 @import "blocks/catalog";
 @import "blocks/product";
 @import "blocks/is-selected";
-@import "blocks/disable-hover";
 @import "blocks/is-disabled";

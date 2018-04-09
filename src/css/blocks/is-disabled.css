@@ -17,9 +17,9 @@
       bottom: 4px;
       left: 4px;
       background-color: $gray--disabled-dark;
-      opacity: 0.6;
       border-radius: 10px;
       border-top-left-radius: 83px;
+      opacity: 0.6;
     }
   }
 

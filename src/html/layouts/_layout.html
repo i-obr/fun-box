@@ -14,10 +14,5 @@
       <link rel="stylesheet" media="all" href="css/style.css">
     {% endif %}
   </head>
-  <body>
-    <section class="content">
-      {% block content %}{% endblock %}
-    </section>
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+  {% block content %}{% endblock %}
 </html>

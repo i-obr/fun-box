@@ -1,0 +1,20 @@
+@custom-media --viewport-medium (width >= 768px);
+@custom-media --viewport-large (width >= 1200px);
+
+:root {
+  --fontMain: Trebuchet MS, "Lucida Grande", "Lucida Sans Unicode",
+    "Lucida Sans", Tahoma, sans-serif;
+  --fontExo: "Exo2.0-Thin", Arial, sans-serif;
+}
+
+$blue: #1698d9;
+$blue--hover: #2ea8e6;
+$gray: #666;
+$gray--light: #f2f2f2;
+$gray--disabled-ligt: #b7b7b7;
+$gray--disabled-dark: #e4e4e4;
+
+$yellow: #ff6;
+
+$pink: #d91667;
+$pink--hover: #e62e7a;
