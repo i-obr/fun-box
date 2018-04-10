@@ -1,27 +1,29 @@
 .is-selected {
-  & .product__bg {
-    stroke: $pink;
-  }
-
-  & .product__weight {
-    background-color: $pink;
-  }
-
-  &:hover {
-    .product__text-default {
-      display: none;
-    }
-
-    .product__text-selected {
-      display: block;
-    }
-
-    .product__bg {
-      stroke: $pink--hover;
+  .product__card {
+    & .product__bg {
+      stroke: $pink;
     }
 
     .product__weight {
-      background-color: $pink--hover;
+      background-color: $pink;
+    }
+
+    &:hover {
+      .product__text-default {
+        display: none;
+      }
+
+      .product__text-selected {
+        display: block;
+      }
+
+      .product__bg {
+        stroke: $pink--hover;
+      }
+
+      .product__weight {
+        background-color: $pink--hover;
+      }
     }
   }
 }

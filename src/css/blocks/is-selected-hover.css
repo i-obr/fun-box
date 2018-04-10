@@ -1,0 +1,26 @@
+.is-selected-hover {
+  .product__card {
+    &::before {
+      content: "Котэ не одобряет?";
+      display: none;
+      margin: 0;
+      margin-bottom: 7px;
+      z-index: 1;
+      font-size: 16px;
+      color: $pink--hover;
+      box-sizing: border-box;
+    }
+  }
+
+  &:hover {
+    .product__tagline {
+      display: none;
+    }
+
+    .product__card {
+      &::before {
+        display: block;
+      }
+    }
+  }
+}

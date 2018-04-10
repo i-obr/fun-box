@@ -1,10 +1,7 @@
 .form {
-  &__label {
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 700;
-    color: $blue;
-    text-decoration: none;
-    border-bottom: 1px dashed $blue;
-  }
+  font-family: var(--fontMain);
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+  box-sizing: border-box;
 }
