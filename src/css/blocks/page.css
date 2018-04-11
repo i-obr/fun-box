@@ -20,9 +20,8 @@
   box-sizing: border-box;
 
   @media (--viewport-large) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
   }
 
   &__content {
