@@ -7,8 +7,6 @@
   --fontExo: "Exo2.0-Thin", Arial, sans-serif;
 
   @media (--viewport-large) {
-    display: table;
-    width: 100%;
     height: 100%;
   }
 }
