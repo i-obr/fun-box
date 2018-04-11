@@ -63,7 +63,6 @@
     "postcss-normalize": "^4.0.0",
     "precss": "^3.1.2",
     "prettier-stylelint": "^0.4.2",
-    "stream-combiner2": "^1.1.1",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0",
     "vinyl-buffer": "^1.0.0",
